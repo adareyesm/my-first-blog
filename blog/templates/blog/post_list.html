@@ -1,0 +1,28 @@
+
+<html>
+        <center><h1><p>Holaaa!</p></h1></center>
+        <font color="orange"><center><h1><p>Aqui esta Juan de Dios y Adanely!</p></h1></center></font>
+
+        <head>
+            <title>blog Adareyesm</title>
+        </head>
+        <body>
+        
+
+            <div>
+          <h1><a href="/">Django Girls Blog</a></h1>
+      </div>
+
+      {% for post in posts %}
+          <div>
+              <p>published: {{ post.published_date }}</p>
+              <h1><a href="">{{ post.title }}</a></h1>
+              <p>{{ post.text|linebreaks }}</p>
+          </div>
+      {% endfor %}
+
+
+
+
+        </body>
+    </html>
